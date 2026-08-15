@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FF Account Switcher"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Accounts JSON file ka poora path (jaise /storage/emulated/0/ffguestfile/activated_IND.json)"
+            android:textSize="13sp"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/edtAccountsPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="/storage/emulated/0/ffguestfile/activated_IND.json"
+            android:inputType="textUri"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Free Fire guest cache file ka poora path"
+            android:textSize="13sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edtCachePath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="/storage/emulated/0/ffguestfile/guest100067.txt"
+            android:inputType="textUri"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnSavePaths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Save Paths" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/txtOverlayStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overlay permission: checking..."
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnGrantOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Grant 'Display over other apps' Permission" />
+
+        <TextView
+            android:id="@+id/txtStorageStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Storage permission: checking..."
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnGrantStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Grant 'All Files Access' Permission" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnStartOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Floating Switcher" />
+
+        <Button
+            android:id="@+id/btnStopOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Stop Floating Switcher" />
+
+        <TextView
+            android:id="@+id/txtBatteryHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:text="Tip: 24/7 chalte rahne ke liye, Settings mein is app ke liye Battery ko 'No restrictions' / 'Unrestricted' set karo, aur agar tumhara phone Xiaomi/Vivo/Oppo/Realme hai to Autostart bhi on karo." />
+
+    </LinearLayout>
+</ScrollView>
